@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    background-color: biue;
+}
+
+/* Khung ngoài */
+.container {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #0077b6;
+    border-radius: 20px;
+    background-color: SlateBlue;
+}
+
+#title{
+	text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff247;
+}
+
+label {
+    display: block;
+}
+
+#frmLogin 
+{
+    border-radius: 25px;
+    background-color: pink;
+    padding: 35px;
+    box-shadow: 0 8px 30px pink;
+}
+}
