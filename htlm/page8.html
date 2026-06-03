@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head> 
+		<title> Thiết kế trang giới thiệu sản phẩm</title> 
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" href = "../css/style04.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="product-list">
+        </div>
+    </div>
+
+<script>
+
+//Xác định khung chứa product-list
+const listProducts = document.getElementById("product-list");
+
+//Tạo 1 container có class = "item"
+const item = document.createElement("div");
+item.setAttribute("class", "item");
+
+//Tạo 2 khung chứa Hình ảnh và Thông tin
+//Tạo 1 container chứa hình ảnh có class = "image" ==> chỉ có 1 con là img
+const containerImage = document.createElement("div");
+containerImage.setAttribute("class", "image");
+
+//Tạo ảnh
+const img = document.createElement("img");
+img.setAttribute("src", "../assets/d8b1e0c651fad0a489eb.jpg");
+img.setAttribute("alt", "con chó con");
+img.setAttribute("style", "width:hoa hồng Pháp100%; max-width:150px");
+
+//Đưa vào khung chứa ảnh
+containerImage.appendChild(img);
+
+//Tạo 1 container chứa thông tin sản phẩm có class = "info" ==> có 3 <p> và 1 <a>
+const containerInfo = document.createElement("div");
+containerInfo.setAttribute("class", "info");
+
+//Tạo <p> chứa tên sản phẩm
+const nameProduct = document.createElement("p");
+nameProduct.innerHTML = "đây là giống hiếm nhất việt nam ";
+
+//Tạo <p> chứa giá sản phẩm
+const price = document.createElement("p");
+price.innerHTML = " sản phẩm có hạng 1 tờ/con";
+
+//Tạo <p> chứa mô tả sản phẩm
+const description = document.createElement("p");
+description.innerHTML =
+    "Đây là một cá thể .... có thể nuôi đặt biệt dễ đi tòa";
+
+//Tạo <a> chứa liên kết
+const linkProduct = document.createElement("a");
+linkProduct.innerHTML = "Xem chi tiết";
+linkProduct.setAttribute("href", "page6.html");
+
+
+//Gần 4 con vào khung chứng Info
+containerInfo.appendChild(nameProduct);
+containerInfo.appendChild(price);
+containerInfo.appendChild(description);
+containerInfo.appendChild(linkProduct);
+
+//Thêm khung chứa image vào Info
+item.appendChild(containerImage);
+item.appendChild(containerInfo);
+
+//Thêm item vào list product
+listProducts.appendChild(item);
+
+</script>
+
+</body>
+</html>
