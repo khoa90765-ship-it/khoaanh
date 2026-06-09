@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Trang hiển thị</title>
+       
+	</head>
+	
+	<body>
+		<div class="container">
+			<p id ="name">Trang tính diện tích</p>
+		</div>
+        <script>
+            let r = Number(prompt("Nhập chiều rộng hình chữ nhật "));
+            let d = Number(prompt("Nhập chiều dài hình chữ nhật "));
+
+            while(d<r)
+            {
+                alert("Chiều dài phải lớn hơn hoặc bằng chiều rộng ")
+                r = Number(prompt("Nhập chiều rộng hình chữ nhật "));
+                d = Number(prompt("Nhập chiều dài hình chữ nhật "));
+            }
+            
+            //d>r
+                if(d>r){
+                    alert(`Diện tích hình chữ nhật có chiều dài = ${d} cm và chiều rộng = ${r}cm là ${d*r} cm^2`);
+                    document.getElementById("name").innerHTML =`Diện tích hình chữ nhật có chiều dài = ${d} cm và chiều rộng = ${r}cm là ${d*r} cm^2` ;
+                }
+            //d=r
+                else{
+                    alert(`Diện tích hình vuông có cạnh = ${r} là ${r*r} cm^2`);
+                    document.getElementById("name").innerHTML =`Diện tích hình vuông có cạnh = ${r} là ${r*r} cm^2` ;
+                }
+           
+        </script>
+
+        
+	</body>
+	
+	
+</html>
