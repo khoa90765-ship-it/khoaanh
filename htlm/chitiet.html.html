@@ -1,5 +1,19 @@
-/*viet ma javascript*/
-//khai bao 1 doi tuong luu thong tin san pham
+<!DOCTYPE html>
+<html lang="vi">
+<head> 
+		<title> Thiết kế trang giới thiệu sản phẩm</title> 
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" href = "../css/style04.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="product-list">
+        </div>
+    </div>
+
+<script>
+
 const products = [
     {
         nameProduct: "Hạt giống Hoa hồng Pháp",
@@ -12,14 +26,7 @@ const products = [
         nameProduct: "Hạt giống Hoa hồng Pháp",
         price: "800",
         description: "Đây là một loại hoa hồng nổi tiếng ở nước Pháp được nhập khẩu",
-        image: "../assets/anhcho.jpg",
-        link: "chitiet.html"
-    },
-    {
-        nameProduct: "Hạt giống Hoa hồng Pháp",
-        price: "800",
-        description: "Đây là một loại hoa hồng nổi tiếng ở nước Pháp được nhập khẩu",
-        image: "../assets/chocon.jpg",
+        image: "../assets/images/anhcho.jpgs",
         link: "chitiet.html"
     },
 ];
@@ -87,3 +94,8 @@ window.onload = function ()
         creatItem(product);
     });
 };
+
+</script>
+
+</body>
+</html>
