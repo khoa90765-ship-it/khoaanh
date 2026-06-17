@@ -2,24 +2,31 @@
 //khai bao 1 doi tuong luu thong tin san pham
 const products = [
     {
-        nameProduct: "Hạt giống Hoa hồng Pháp",
-        price: "800",
-        description: "Đây là một loại hoa hồng nổi tiếng ở nước Pháp được nhập khẩu",
-        image: "../assets/images/anhcho.jpg",
+        nameProduct: "nam việt quốc",
+        price: "45.000đ",
+        description: "đây là một loại nước chuyền thống tại cuba",
+        image: "../assets/images/nuoc1.jpg",
         link: "chitiet.html"
     },
     {
-        nameProduct: "Hạt giống Hoa hồng Pháp",
-        price: "800",
-        description: "Đây là một loại hoa hồng nổi tiếng ở nước Pháp được nhập khẩu",
-        image: "../assets/anhcho.jpg",
+        nameProduct: "cacao đầm",
+        price: "45.000đ",
+        description: "một loại nước uống giải khác vào mùa hè",
+        image: "../assets/nuoc2.jpg", 
         link: "chitiet.html"
     },
     {
-        nameProduct: "Hạt giống Hoa hồng Pháp",
+        nameProduct: "chó cỏ",
         price: "800",
         description: "Đây là một loại hoa hồng nổi tiếng ở nước Pháp được nhập khẩu",
-        image: "../assets/chocon.jpg",
+        image: "../assets/nuoc3.jpg",
+        link: "chitiet.html"
+    },
+    {
+        nameProduct: "chó cỏ",
+        price: "800",
+        description: "Đây là một loại hoa hồng nổi tiếng ở nước Pháp được nhập khẩu",
+        image: "../assets/nuoc4.jpg",
         link: "chitiet.html"
     },
 ];
